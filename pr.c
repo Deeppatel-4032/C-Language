@@ -1,25 +1,25 @@
 #include<stdio.h>
 
-int main(){
+int main() {
 
-    int amount;
-    float p, r, t, si;
+  int age;
 
-    printf("Enter the principal : ");
-    scanf("%f", &p);
+  printf("Enter the your age : ");
+  scanf("%d", &age);
 
-    printf("Enter the rate : ");
-    scanf("%f", &r);
+  if(age >= 18) {
 
-    printf("Enter the time : ");
-    scanf("%f", &t);
+    printf("you adult");
 
-    si = (p * r * t)/100;
+  }
+  else if(age > 13 && age < 18){
 
-    amount = si + p;
+    printf("you are teeneger");
+  }
+  else {
 
-    printf("simple interest is a : %f\n", si);
+    printf("you are not adult");
+  }
 
-    printf("amount is a : %d", amount);
-
+  return 0;
 }
